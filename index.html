@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type ="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/JQUERYmain.js"></script>
+
+     
+
+	<script>
+	/*	$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 5){
+			$("#faina").css("left","535px").css("top","190px");
+			$("#piper").css("left","550px").css("top","290px");
+			$("#branza").css("left","530px").css("top","340px");
+			$("#rosie").css("left","500px").css("top","360px");
+			$("#ardei").css("left","450px").css("top","260px");
+			$("#gogosar").css("left","545px").css("top","320px");
+			$("#menta").css("left","480px").css("top","210px");
+			$("#ceapa").css("left","515px").css("top","140px");
+			$("#usturoi").css("left","480px").css("top","320px");
+			$("#bacon").css("left","510px").css("top","250px");
+			$("#flour").css("left","540px").css("top","240px");
+		}
+
+	});
+
+});*/
+	</script>
+
+
+
+
+
+
+
+	
+</head>
+<body>
+
+	  <div id ="container">
+
+		<nav>
+			<img src="5.jpg" width="200" height ="80" alt="">  
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Home</a></li>
+
+			</ul>
+		</nav>
+	
+	</div>
+
+
+	<div id="main">
+		<img src="pizza11.png"/>
+		
+	</div>
+	<img src="onion10.png" id="ceapa"/>
+	<img src="mint5.png" id="menta"/>
+    <img src="ciupercute3.png" id="faina"/>
+	<img src="piper4.png" id="piper"/>
+	<img src="usuroi4.png" id="usturoi"/>
+	<img src="gogosar3.png" id="gogosar"/>
+	<img src="chilli7.png" id="ardei"/>
+	<img src="tomato2.png" id="rosie"/>
+	<img src="cheese05.png" id="branza"/>
+	<img src="bacon1.png" id="bacon"/>
+	<img src="flour3.png" id="flour"/>
+
+
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				console.log('click pe imagine');
+				$.ajax({
+				  url: "onion9.png",
+				  context: document.body
+				}).done(function() {
+				  $( this ).addClass( "done" );
+				});
+			});
+		});
+	</script>
+	
+</body>
+</html>
